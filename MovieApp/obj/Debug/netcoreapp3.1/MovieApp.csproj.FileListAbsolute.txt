@@ -1,0 +1,16 @@
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\netcoreapp3.1\MovieApp.exe
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\netcoreapp3.1\MovieApp.deps.json
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\netcoreapp3.1\MovieApp.runtimeconfig.json
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\netcoreapp3.1\MovieApp.runtimeconfig.dev.json
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\netcoreapp3.1\MovieApp.dll
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\netcoreapp3.1\MovieApp.pdb
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.csproj.AssemblyReference.cache
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.Form1.resources
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.csproj.GenerateResource.cache
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.AssemblyInfoInputs.cache
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.AssemblyInfo.cs
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.csproj.CoreCompileInputs.cache
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.dll
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.pdb
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\netcoreapp3.1\MovieApp.genruntimeconfig.cache
