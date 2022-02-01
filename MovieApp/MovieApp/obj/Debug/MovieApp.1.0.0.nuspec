@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MovieApp</id>
+    <version>1.0.0</version>
+    <authors>MovieApp</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net5.0-windows7.0">
+        <dependency id="Microsoft.AspNet.WebApi.SelfHost" version="5.2.2" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Http" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Http" version="4.3.4" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net5.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\net5.0-windows\MovieApp.runtimeconfig.json" target="lib\net5.0-windows7.0\MovieApp.runtimeconfig.json" />
+    <file src="C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\net5.0-windows\MovieApp.dll" target="lib\net5.0-windows7.0\MovieApp.dll" />
+  </files>
+</package>
