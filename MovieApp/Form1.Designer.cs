@@ -34,9 +34,9 @@ namespace MovieApp
             this.movieTitleTextBox = new System.Windows.Forms.TextBox();
             this.directorTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.SearchButton = new System.Windows.Forms.Button();
+            this.searchTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // nextButton
@@ -82,20 +82,29 @@ namespace MovieApp
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // SearchButton
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(607, 172);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(8, 8);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
+            this.SearchButton.Location = new System.Drawing.Point(645, 130);
+            this.SearchButton.Name = "SearchButton";
+            this.SearchButton.Size = new System.Drawing.Size(75, 23);
+            this.SearchButton.TabIndex = 6;
+            this.SearchButton.Text = "Search";
+            this.SearchButton.UseVisualStyleBackColor = true;
+            // 
+            // searchTextBox
+            // 
+            this.searchTextBox.Location = new System.Drawing.Point(631, 101);
+            this.searchTextBox.Name = "searchTextBox";
+            this.searchTextBox.Size = new System.Drawing.Size(100, 23);
+            this.searchTextBox.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.searchTextBox);
+            this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.directorTextBox);
             this.Controls.Add(this.movieTitleTextBox);
@@ -105,7 +114,6 @@ namespace MovieApp
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,7 +126,8 @@ namespace MovieApp
         private System.Windows.Forms.TextBox movieTitleTextBox;
         private System.Windows.Forms.TextBox directorTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button SearchButton;
+        private System.Windows.Forms.TextBox searchTextBox;
     }
 }
 
