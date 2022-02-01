@@ -26,7 +26,7 @@ namespace MovieApp
         {
             Task.Run(async () =>
             {
-                movies = await MovieDataService.GetMoviesString();
+                movies = await MovieDataService.GetMoviesString("jaws");
                 Console.WriteLine(movies[0].Name);
                 displayData(movies[0]);
             });
@@ -47,7 +47,7 @@ namespace MovieApp
         private void displayData(Movie movie)
         {
             movieTitleTextBox.Text = movie.Name;
-            directorTextBox.Text = movie.Director;
+            directorTextBox.Text = movie.year;
 
             //pictureBox1.ImageLocation = "C:/Users/bsmith/source/repos/MovieApp/MovieApp/Resources/" + movie.ImageName;
             //pictureBox1.Image = movie.MovieImage;
@@ -72,6 +72,17 @@ namespace MovieApp
                 currentIndex = movies.Count-1;
             }
             displayData(movies[currentIndex]);
+        }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+            Task.Run(async () =>
+            {
+                movies = await MovieDataService.GetMoviesString(searchTextBox.Text);
+                Console.WriteLine(movies[0].Name);
+                currentIndex = 0;
+                displayData(movies[0]);
+            });
         }
     }
 }

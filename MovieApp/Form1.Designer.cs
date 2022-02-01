@@ -41,7 +41,7 @@ namespace MovieApp
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(462, 275);
+            this.nextButton.Location = new System.Drawing.Point(461, 359);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
             this.nextButton.TabIndex = 0;
@@ -51,7 +51,7 @@ namespace MovieApp
             // 
             // previousButton
             // 
-            this.previousButton.Location = new System.Drawing.Point(231, 275);
+            this.previousButton.Location = new System.Drawing.Point(246, 359);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(75, 23);
             this.previousButton.TabIndex = 1;
@@ -61,23 +61,23 @@ namespace MovieApp
             // 
             // movieTitleTextBox
             // 
-            this.movieTitleTextBox.Location = new System.Drawing.Point(322, 199);
+            this.movieTitleTextBox.Location = new System.Drawing.Point(337, 301);
             this.movieTitleTextBox.Name = "movieTitleTextBox";
             this.movieTitleTextBox.Size = new System.Drawing.Size(100, 23);
             this.movieTitleTextBox.TabIndex = 2;
             // 
             // directorTextBox
             // 
-            this.directorTextBox.Location = new System.Drawing.Point(322, 228);
+            this.directorTextBox.Location = new System.Drawing.Point(337, 330);
             this.directorTextBox.Name = "directorTextBox";
             this.directorTextBox.Size = new System.Drawing.Size(100, 23);
             this.directorTextBox.TabIndex = 3;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(293, 37);
+            this.pictureBox1.Location = new System.Drawing.Point(294, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(170, 156);
+            this.pictureBox1.Size = new System.Drawing.Size(189, 283);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
@@ -90,6 +90,7 @@ namespace MovieApp
             this.SearchButton.TabIndex = 6;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // searchTextBox
             // 

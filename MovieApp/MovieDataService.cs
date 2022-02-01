@@ -13,7 +13,7 @@ namespace MovieApp
 
         static readonly HttpClient client = new HttpClient()
         {
-            BaseAddress = new Uri("http://www.omdbapi.com/?s=jaws&apikey=f0674f3f")
+            BaseAddress = new Uri("http://www.omdbapi.com/")
         };
 
         public static async Task<List<Movie>> GetMoviesFromJsonFile()
@@ -27,13 +27,13 @@ namespace MovieApp
             }
             return movies;
         }
-        public static async Task<List<Movie>> GetMoviesString()
+        public static async Task<List<Movie>> GetMoviesString(string title)
         {
             Response response = null;
 
             try
             {
-                var res = await client.GetAsync(client.BaseAddress);
+                var res = await client.GetAsync(client.BaseAddress + $"?s={title}&apikey=f0674f3f");
                 if (res.IsSuccessStatusCode)
                 {
                     var content = await res.Content.ReadAsStringAsync();

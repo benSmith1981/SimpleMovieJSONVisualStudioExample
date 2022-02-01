@@ -17,6 +17,8 @@ class Movie
 {
     [JsonProperty("Title")]
     private string name;
+    [JsonProperty("Year")]
+    public string year;
     private string certificate;
     private string director;
     private string mainStar;
@@ -25,7 +27,7 @@ class Movie
     private System.Drawing.Image movieimage;
     private int runningTime;
 
-    public Movie(string name, string certificate, string director, string mainStar, int runningTime, string imageName, System.Drawing.Image movieimage)
+    public Movie(string name, string certificate, string director, string mainStar, int runningTime, string imageName, System.Drawing.Image movieimage, string year)
     {
         this.name = name;
         this.imageName = imageName;
@@ -34,6 +36,7 @@ class Movie
         this.mainStar = mainStar;
         this.runningTime = runningTime;
         this.movieimage = movieimage;
+        this.year = year;
     }
 
     public System.Drawing.Image MovieImage
