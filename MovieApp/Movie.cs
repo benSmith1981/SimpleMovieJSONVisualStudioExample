@@ -16,27 +16,44 @@ class Response
 class Movie
 {
     [JsonProperty("Title")]
-    public string Title { get; set; }
+    private string name;
     private string certificate;
     private string director;
     private string mainStar;
+    [JsonProperty("Poster")]
+    private string imageName;
+    private System.Drawing.Image movieimage;
     private int runningTime;
 
-    public Movie(string Title, string certificate, string director, string mainStar, int runningTime)
+    public Movie(string name, string certificate, string director, string mainStar, int runningTime, string imageName, System.Drawing.Image movieimage)
     {
-        this.Title = Title;
+        this.name = name;
+        this.imageName = imageName;
         this.certificate = certificate;
         this.director = director;
         this.mainStar = mainStar;
         this.runningTime = runningTime;
+        this.movieimage = movieimage;
     }
 
-/*    public string Name
+    public System.Drawing.Image MovieImage
+    {
+        get { return movieimage; }
+
+        set { movieimage = value; }
+    }
+    public string ImageName
+    {
+        get { return imageName; }
+
+        set { imageName = value; }
+    }
+    public string Name
     {
         get { return name; }
 
         set { name = value; }
-    }*/
+    }
 
     public string Certificate
     {

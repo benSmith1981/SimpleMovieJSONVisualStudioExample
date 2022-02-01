@@ -55,7 +55,7 @@ namespace MovieApp
             try
             {
                 response = await client.GetFromJsonAsync<Response>(client.BaseAddress);
-                Console.WriteLine(response);
+                //Console.WriteLine(response);
             }
             catch (Exception ex)
             {

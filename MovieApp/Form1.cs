@@ -20,36 +20,38 @@ namespace MovieApp
         {
             InitializeComponent();
 
-
-
-         
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Task.Run(async () => {
-                movies = await MovieDataService.GetMovies();
-                Console.WriteLine(movies[0].Title);
+            Task.Run(async () =>
+            {
+                movies = await MovieDataService.GetMoviesString();
+                Console.WriteLine(movies[0].Name);
                 displayData(movies[0]);
-                this.Refresh();
-
             });
-            /*            movies.Add(new Movie("Creed II", "12A", "Steven Caple Jr.", "Michael B. Jordan", 130));
-                        movies.Add(new Movie("A Star is Born", "15", "Bradley Cooper", "Lady Gaga", 136));
-                        movies.Add(new Movie("Robin Hood", "12A", "Marc Forster", "Taron Egerton", 116));
-                        movies.Add(new Movie("The Grinch", "U", "Peter Candeland", "Benedict Cumberbatch", 90));
-                        movies.Add(new Movie("Aquaman", "12A", "James Wan", "Jason Momoa", 143));
-                        movies.Add(new Movie("Bohemian Rhapsody", "12A", "Bryan Singer", "Rami Malek", 134));
 
-                        displayData(movies[0]);
-            */
+
+/*            
+            movies.Add(new Movie("Creed II", "12A", "Steven Caple Jr.", "Michael B. Jordan", 130,"creed2.jpg",Properties.Resources.creed2));
+            movies.Add(new Movie("A Star is Born", "15", "Bradley Cooper", "Lady Gaga", 136, "StarIsBorn.jpg", Properties.Resources.creed2));
+            movies.Add(new Movie("Robin Hood", "12A", "Marc Forster", "Taron Egerton", 116, "Grinch.jpg", Properties.Resources.creed2));
+            movies.Add(new Movie("The Grinch", "U", "Peter Candeland", "Benedict Cumberbatch", 90, "Grinch.jpg", Properties.Resources.creed2));
+            movies.Add(new Movie("Aquaman", "12A", "James Wan", "Jason Momoa", 143, "Grinch.jpg", Properties.Resources.creed2));
+            movies.Add(new Movie("Bohemian Rhapsody", "12A", "Bryan Singer", "Rami Malek", 134, "Grinch.jpg", Properties.Resources.creed2));
+*/
+            //displayData(movies[0]);
+
         }
 
         private void displayData(Movie movie)
         {
-            movieTitleTextBox.Text = movie.Title;
+            movieTitleTextBox.Text = movie.Name;
             directorTextBox.Text = movie.Director;
+
+            //pictureBox1.ImageLocation = "C:/Users/bsmith/source/repos/MovieApp/MovieApp/Resources/" + movie.ImageName;
+            //pictureBox1.Image = movie.MovieImage;
+            pictureBox1.LoadAsync(movie.ImageName);
         }
         private void nextButton_Click(object sender, EventArgs e)
         {

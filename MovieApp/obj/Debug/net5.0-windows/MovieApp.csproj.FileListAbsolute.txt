@@ -30,3 +30,4 @@ C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\net5.0-windows\ref\Movi
 C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\net5.0-windows\MovieApp.pdb
 C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\net5.0-windows\MovieApp.genruntimeconfig.cache
 C:\Users\bsmith\source\repos\MovieApp\MovieApp\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\bsmith\source\repos\MovieApp\MovieApp\obj\Debug\net5.0-windows\MovieApp.Properties.Resources.resources
