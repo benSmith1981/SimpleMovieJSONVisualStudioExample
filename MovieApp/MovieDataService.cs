@@ -18,12 +18,14 @@ namespace MovieApp
 
         public static async Task<List<Movie>> GetMoviesFromJsonFile()
         {
+            List<Movie> movies;
             using (StreamReader r = new StreamReader("C:/Users/bsmith/source/repos/MovieApp/MovieApp/movies.json"))
             {
                 string json = r.ReadToEnd();
                 Response res = JsonConvert.DeserializeObject<Response>(json);
-                List<Movie> movies = new List<Movie>(res.search);
+                movies = new List<Movie>(res.search);
             }
+            return movies;
         }
         public static async Task<List<Movie>> GetMoviesString()
         {
@@ -60,13 +62,7 @@ namespace MovieApp
                Console.Write(ex.ToString());
             }
             return new List<Movie>(response.search);
-
-            // Post a new user.
-            /*            HttpResponseMessage response = await client.PostAsJsonAsync("users", user);
-                        Console.WriteLine(
-                            $"{(response.IsSuccessStatusCode ? "Success" : "Error")} - {response.StatusCode}");*/
         }
-
 
     }
 }

@@ -19,24 +19,22 @@ namespace MovieApp
         public Form1()
         {
             InitializeComponent();
-            using (StreamReader r = new StreamReader("C:/Users/bsmith/source/repos/MovieApp/MovieApp/movies.json"))
-            {
-                string json = r.ReadToEnd();
-                Response res = JsonConvert.DeserializeObject<Response>(json);
-                List<Movie> movies = new List<Movie>(res.search);
-            }
 
-            Task.Run(async() => {
-                movies = await MovieDataService.GetMovies();
-                Console.WriteLine(movies[0].Title);
-                displayData(movies[0]);
-            });
+
+
          
 
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            Task.Run(async () => {
+                movies = await MovieDataService.GetMovies();
+                Console.WriteLine(movies[0].Title);
+                displayData(movies[0]);
+                this.Refresh();
+
+            });
             /*            movies.Add(new Movie("Creed II", "12A", "Steven Caple Jr.", "Michael B. Jordan", 130));
                         movies.Add(new Movie("A Star is Born", "15", "Bradley Cooper", "Lady Gaga", 136));
                         movies.Add(new Movie("Robin Hood", "12A", "Marc Forster", "Taron Egerton", 116));

@@ -37,7 +37,7 @@ namespace MovieApp
             // 
             // nextButton
             // 
-            this.nextButton.Location = new System.Drawing.Point(465, 348);
+            this.nextButton.Location = new System.Drawing.Point(462, 275);
             this.nextButton.Name = "nextButton";
             this.nextButton.Size = new System.Drawing.Size(75, 23);
             this.nextButton.TabIndex = 0;
@@ -47,7 +47,7 @@ namespace MovieApp
             // 
             // previousButton
             // 
-            this.previousButton.Location = new System.Drawing.Point(230, 348);
+            this.previousButton.Location = new System.Drawing.Point(231, 275);
             this.previousButton.Name = "previousButton";
             this.previousButton.Size = new System.Drawing.Size(75, 23);
             this.previousButton.TabIndex = 1;
@@ -57,14 +57,14 @@ namespace MovieApp
             // 
             // movieTitleTextBox
             // 
-            this.movieTitleTextBox.Location = new System.Drawing.Point(322, 118);
+            this.movieTitleTextBox.Location = new System.Drawing.Point(322, 48);
             this.movieTitleTextBox.Name = "movieTitleTextBox";
             this.movieTitleTextBox.Size = new System.Drawing.Size(100, 23);
             this.movieTitleTextBox.TabIndex = 2;
             // 
             // directorTextBox
             // 
-            this.directorTextBox.Location = new System.Drawing.Point(322, 181);
+            this.directorTextBox.Location = new System.Drawing.Point(322, 183);
             this.directorTextBox.Name = "directorTextBox";
             this.directorTextBox.Size = new System.Drawing.Size(100, 23);
             this.directorTextBox.TabIndex = 3;
